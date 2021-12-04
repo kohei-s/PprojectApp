@@ -26,13 +26,12 @@ button
 
 params = {"url": url_input}
 
-st.markdown(
-    """
+st.markdown("""
     Our app will produce two different summaries:
 
-    1) Extractive Summary
+    1) Abstractive Summary
 
-    2) Abstractive Summary
+    2) Extractive Summary
     """)
 
 st.markdown(
@@ -45,7 +44,7 @@ if button:
     st.write("Abstractive Text:")
     st.write(text["abstractive_summary"])
     st.write("Extractive Text:")
-    st.write(text["abstractive_summary"])
+    st.write(text["extractive_summary"])
     #summ = text['Summarized text']
     #st.write(str(text))
 
